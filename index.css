@@ -6,7 +6,7 @@ body {
 }
 .home {
   background-color: white;
-  border: 3px solid black;
+  border: 3px solid blue;
   overflow: hidden;
   font-size: 45px;
   text-align: top;
@@ -14,10 +14,10 @@ body {
 
 .home a {
   background-color: white;
-  border: 3px solid black;
+  border: 3px solid blue;
   background-repeat: no-repeat;
   float: left;
-  color: black;
+  color: blue;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -26,7 +26,7 @@ body {
 }
 
 .home a:hover {
-  color: magenta;
-  border-color: magenta;;
+  color: blue;
+  border-color: magenta;
   animation: scaleUp 1s forwards;
 }
