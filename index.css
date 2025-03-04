@@ -3,14 +3,7 @@ html {
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    background-image: url('DSC_5359.JPG');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100vh;
+  text-align: center;
 }
 /* Navigation bar container */
 .home {
