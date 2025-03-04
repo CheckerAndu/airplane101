@@ -7,12 +7,12 @@ body {
 }
 /* Navigation bar container */
 .home {
-    background: linear-gradient(45deg, rgba(0, 0, 139, 1), rgba(0, 0, 139, 0.7));
+    background: linear-gradient(to right, rgba(0, 0, 139, 1), rgba(0, 0, 139, 0.7));
     overflow: hidden;
     font-size: 40px;
-    position: sticky; /* Sticks to the top when scrolling */
+    position: sticky;
     top: 0;
-    z-index: 1000; /* Ensures it stays above other elements */
+    z-index: 1000;
 }
 
 /* Navigation links */
