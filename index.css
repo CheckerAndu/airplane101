@@ -5,58 +5,58 @@ html {
 body {
   text-align: center;
 }
-/* Navigation bar container */
+
 .home {
-    background: linear-gradient(to right, rgba(0, 0, 139, 1), rgba(0, 0, 139, 0.7), rgba(128, 0, 128, 0.5)) !important;
-    overflow: hidden;
-    font-size: 60px;
-    height: 80px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  background: linear-gradient(to right, rgba(0, 0, 139, 1), rgba(0, 0, 139, 0.7), rgba(128, 0, 128, 0.5));
+  overflow: hidden;
+  font-size: 60px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 60px; /* Add a specific height */
+  display: flex; /* Use flexbox for better alignment */
+  align-items: center; /* Center items vertically */
 }
 
-/* Navigation links */
 .home a {
-    float: left;
-    color: white; /* White text for better contrast */
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-    font-size: 24px;
-    font-family: 'Arial', sans-serif; /* Clean and modern font */
-    position: relative; /* For positioning the pseudo-element */
-    transition: color 0.3s ease; /* Smooth color transition */
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Arial', sans-serif;
+  position: relative;
+  transition: color 0.3s ease;
 }
 
-/* Animated underline effect */
 .home a::after {
-    content: '';
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: magenta;
-    transition: width 0.3s ease;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: magenta;
+  transition: width 0.3s ease;
 }
 
-/* Hover effect for links */
 .home a:hover {
-    color: magenta; /* Magenta text on hover */
+  color: magenta;
 }
 
 .home a:hover::after {
-    width: 100%; /* Extend underline to full width on hover */
+  width: 100%;
 }
 
-/* Responsive design for smaller screens */
 @media (max-width: 768px) {
-    .home a {
-        float: none; /* Stack links vertically on small screens */
-        display: block;
-        text-align: left;
-        padding-left: 20px;
-        font-size: 16px;
-    }
+  .home {
+    height: auto; /* Allow height to adjust for stacked links */
+    flex-direction: column; /* Stack links vertically */
   }
+  .home a {
+    width: 100%; /* Full width for each link */
+    text-align: left;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
