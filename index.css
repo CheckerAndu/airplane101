@@ -3,15 +3,15 @@ html {
 }
 .home {
   background-color: white;
-  border: 3px solid black;
+  border: 1px solid white
   overflow: hidden;
   font-size: 45px;
   text-align: top;
 }
 
 .home a {
-  background-color: blue;
-  border: 3px solid blue;
+  background-color:blue;
+  border: 1px white;
   background-repeat: no-repeat;
   float: left;
   color: blue;
