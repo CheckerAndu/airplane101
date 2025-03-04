@@ -8,9 +8,8 @@ body {
 /* Navigation bar container */
 .home {
     background: linear-gradient(to right, rgba(0, 0, 139, 1), rgba(0, 0, 139, 0.7), rgba(128, 0, 128, 0.5)) !important;
-    height: 24px;
     overflow: hidden;
-    font-size: 40px;
+    font-size: 60px;
     position: sticky;
     top: 0;
     z-index: 1000;
