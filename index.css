@@ -7,7 +7,7 @@ body {
 }
 /* Navigation bar container */
 .home {
-    background-color: rgba(0, 0, 139, 1); /* Transparent dark blue */
+    background: linear-gradient(45deg, rgba(0, 0, 139, 1), rgba(0, 0, 139, 0.7));
     overflow: hidden;
     font-size: 40px;
     position: sticky; /* Sticks to the top when scrolling */
@@ -17,7 +17,6 @@ body {
 
 /* Navigation links */
 .home a {
-    background: linear-gradient(45deg, rgba(0, 0, 139, 1), rgba(0, 0, 139, 0.7));
     float: left;
     color: white; /* White text for better contrast */
     text-align: center;
