@@ -1,32 +1,62 @@
 html {
   scroll-behavior: smooth;
-}
 body {
- text-align: center;
-}
-.home {
-  background-color: white;
-  border: 3px solid blue;
-  overflow: hidden;
-  font-size: 45px;
-  text-align: top;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
 }
 
-.home a {
-  background-color: white;
-  border: 3px solid blue;
-  background-repeat: no-repeat;
-  float: left;
-  color: blue;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 40px;
-  font-family: fantasy;
+.navbar {
+    background-color: #00205b;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.home a:hover {
-  color: blue;
-  border-color: magenta;
-  animation: scaleUp 1s forwards;
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
+.logo img {
+    height: 40px;
+}
+
+.nav-menu {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #003087;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-link {
+        text-align: center;
+    }
+}
+
