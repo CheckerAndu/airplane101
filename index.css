@@ -14,6 +14,8 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
+    display: flex; 
+    align-items: center; 
 }
 
 /* Navigation links */
@@ -21,7 +23,7 @@ body {
     float: left;
     color: white; /* White text for better contrast */
     text-align: center;
-    padding: 14px 20px;
+    padding: 0 20px;
     text-decoration: none;
     font-size: 24px;
     font-family: 'Arial', sans-serif; /* Clean and modern font */
