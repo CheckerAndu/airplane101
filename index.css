@@ -3,15 +3,18 @@ html {
 }
 
 body {
-  margin: 0;
-    font-family: Arial, sans-serif;
-  background-image: url('DSC_5359.JPG');
+    margin: 0;
+    padding: 0;
+    background-image: url('DSC_5359.JPG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
 }
-
 /* Navigation bar container */
 .home {
-    background-color: rgba(0, 0, 139, 0.8); /* Transparent dark blue */
-    border-bottom: 1px solid white;
+    background-color: rgba(0, 0, 139, 0.5); /* Transparent dark blue */
     overflow: hidden;
     font-size: 20px;
     position: sticky; /* Sticks to the top when scrolling */
@@ -28,13 +31,29 @@ body {
     text-decoration: none;
     font-size: 18px;
     font-family: 'Arial', sans-serif; /* Clean and modern font */
-    transition: all 0.3s ease; /* Smooth hover effect */
+    position: relative; /* For positioning the pseudo-element */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Animated underline effect */
+.home a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: magenta;
+    transition: width 0.3s ease;
 }
 
 /* Hover effect for links */
 .home a:hover {
     color: magenta; /* Magenta text on hover */
-    border-bottom: 2px solid magenta; /* Underline effect on hover */
+}
+
+.home a:hover::after {
+    width: 100%; /* Extend underline to full width on hover */
 }
 
 /* Responsive design for smaller screens */
@@ -47,9 +66,3 @@ body {
         font-size: 16px;
     }
 }
-
-
-.title {
-  text-align: left;
-}
-
