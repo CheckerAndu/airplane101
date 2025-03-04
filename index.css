@@ -9,7 +9,7 @@ body {
 .home {
     background: linear-gradient(to right, rgba(0, 0, 139, 1), rgba(0, 0, 139, 0.7), rgba(128, 0, 128, 0.5)) !important;
     overflow: hidden;
-    font-size: 60px;
+    font-size: 50px;
     height: 55px;
     position: sticky;
     top: 0;
@@ -33,7 +33,7 @@ body {
 .home a::after {
     content: '';
     position: absolute;
-    bottom: 5px;
+    bottom: 0px;
     left: 0;
     width: 0;
     height: 2px;
