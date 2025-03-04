@@ -1,31 +1,53 @@
 html {
   scroll-behavior: smoot
 }
+
+body {
+  margin: 0;
+    font-family: Arial, sans-serif;
+  background-image: url('DSC_5359.JPG');
+}
+
+/* Navigation bar container */
 .home {
-  background-color: darkblue;
-  border: 1px solid white
-  overflow: hidden;
-  font-size: 45px;
-  text-align: top;
+    background-color: rgba(0, 0, 139, 0.8); /* Transparent dark blue */
+    border-bottom: 1px solid white;
+    overflow: hidden;
+    font-size: 20px;
+    position: sticky; /* Sticks to the top when scrolling */
+    top: 0;
+    z-index: 1000; /* Ensures it stays above other elements */
 }
 
+/* Navigation links */
 .home a {
-  background-color:blue;
-  border: 1px white;
-  background-repeat: no-repeat;
-  float: left;
-  color: blue;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 40px;
-  font-family: fantasy;
+    float: left;
+    color: white; /* White text for better contrast */
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif; /* Clean and modern font */
+    transition: all 0.3s ease; /* Smooth hover effect */
 }
 
+/* Hover effect for links */
 .home a:hover {
-  color: magenta;
-  border-color: magenta;
+    color: magenta; /* Magenta text on hover */
+    border-bottom: 2px solid magenta; /* Underline effect on hover */
 }
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .home a {
+        float: none; /* Stack links vertically on small screens */
+        display: block;
+        text-align: left;
+        padding-left: 20px;
+        font-size: 16px;
+    }
+}
+
 
 .title {
   text-align: left;
