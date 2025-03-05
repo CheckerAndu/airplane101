@@ -53,4 +53,9 @@ body {
     height: auto; /* Allow height to adjust for stacked links */
     flex-direction: column; /* Stack links vertically */
   }
+
+  h2 {
+    text-align: center;
+    font-size: 18px;
+  }
   
