@@ -53,10 +53,4 @@ body {
     height: auto; /* Allow height to adjust for stacked links */
     flex-direction: column; /* Stack links vertically */
   }
-  .home a {
-    width: 100%; /* Full width for each link */
-    text-align: left;
-    padding: 10px 20px;
-    font-size: 16px;
-  }
-}
+  
