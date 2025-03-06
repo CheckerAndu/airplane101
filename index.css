@@ -16,7 +16,7 @@ body {
   height: 60px; /* Add a specific height */
   display: flex; /* Use flexbox for better alignment */
   align-items: center; /* Center items vertically */
-  border-radius: 10px;
+  border-radius: 4px;
 }
 
 .home a {
