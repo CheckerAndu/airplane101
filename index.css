@@ -82,8 +82,9 @@ button {
       padding: 10px 20px;
       font-size: 16px;
       margin: 5px;
-      border: none;
+      border: 1px;
       border-radius: 5px;
+      border-style: ridge;
       cursor: pointer;
       transition: background-color 0.3s ease, color 0.3s ease;
     }
@@ -92,17 +93,25 @@ button {
     button.default {
       background-color: lightgray;
       color: black;
+      transition: all 0.3s ease;
+      
     }
 
     /* Correct button */
     button.correct {
       background-color: green;
       color: white;
+      transition: all 0.3s ease;
     }
 
     /* Incorrect button */
     button.incorrect {
       background-color: red;
       color: white;
+      transition: all 0.3s ease;
     }
+
+   button:hover {
+     border: 3px rgb(0,0,0);
+   }
 
