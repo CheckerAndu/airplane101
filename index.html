@@ -6,50 +6,23 @@
     <title>Airplane 101</title>
     <link rel="stylesheet" href="index.css">
 </head>
-<audio id="correctSound" src="Correct.mp3"></audio>
-<audio id="incorrectSound" src="Wrong.mp3"></audio>
+<button id="a320" class="default">A320</button>
+  <button id="b747" class="default">B747</button>
+  <button id="a350" class="default">A350</button>
 
-    <body>
-    <div class="home">
-    <h2> Airplane 101</h2>
-     <a href="index.html">Home</a>
-  </div>
-    <br><br>
-    <img src="a320.png" alt="a320/Airplane101" width="500" height="300">
-        <br><br>
-        <button id="a320" class="default">A320</button>
-        <button id="b747" class="default">B747</button>
-        <button id="a350" class="default">A350</button>
-       <script>
-    function handleClick(event) {
-  // Reset all buttons to default state
-  a320Button.className = 'default';
-  b747Button.className = 'default';
-  a350Button.className = 'default';
+  <!-- Audio elements -->
+  <audio id="correctSound" src="path/to/correct-sound.mp3"></audio>
+  <audio id="incorrectSound" src="path/to/incorrect-sound.mp3"></audio>
 
-  // Get the audio elements
-  const correctSound = document.getElementById('correctSound');
-  const incorrectSound = document.getElementById('incorrectSound');
-
-  // Check which button was clicked
-  if (event.target.id === 'a320') {
-    // If A320 is clicked, mark it as correct and play correct sound
-    event.target.className = 'correct';
-    event.target.innerText = 'Correct!';
-    correctSound.play();
-  } else {
-    // If any other button is clicked, mark it as incorrect and play incorrect sound
-    event.target.className = 'incorrect';
-    event.target.innerText = 'Incorrect!';
-    incorrectSound.play();
-  }
-}
-
-           
+  <script>
     // Select all buttons
     const a320Button = document.getElementById('a320');
     const b747Button = document.getElementById('b747');
     const a350Button = document.getElementById('a350');
+
+    // Get the audio elements
+    const correctSound = document.getElementById('correctSound');
+    const incorrectSound = document.getElementById('incorrectSound');
 
     // Function to handle the click event
     function handleClick(event) {
@@ -60,13 +33,15 @@
 
       // Check which button was clicked
       if (event.target.id === 'a320') {
-        // If A320 is clicked, mark it as correct
+        // If A320 is clicked, mark it as correct and play correct sound
         event.target.className = 'correct';
         event.target.innerText = 'Correct!';
+        correctSound.play();
       } else {
-        // If any other button is clicked, mark it as incorrect
+        // If any other button is clicked, mark it as incorrect and play incorrect sound
         event.target.className = 'incorrect';
         event.target.innerText = 'Incorrect!';
+        incorrectSound.play();
       }
     }
 
@@ -75,6 +50,5 @@
     b747Button.addEventListener('click', handleClick);
     a350Button.addEventListener('click', handleClick);
   </script>
-
 </body>
 </html>
