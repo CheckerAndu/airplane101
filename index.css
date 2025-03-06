@@ -65,11 +65,9 @@ body {
 }
 
 img {
+  padding-top: 25px;
   border-radius: 10px;
-  border-top: 2px solid red;
-  border-right: 3px dashed blue;
-  border-bottom: 4px dotted green;
-  border-left: 5px double orange;
+  border: 3px blue;
   transition: all 0.3s ease;
 }
 
