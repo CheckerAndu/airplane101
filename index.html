@@ -6,6 +6,9 @@
     <title>Airplane 101</title>
     <link rel="stylesheet" href="index.css">
 </head>
+<audio id="correctSound" src="path/to/correct-sound.mp3"></audio>
+<audio id="incorrectSound" src="path/to/incorrect-sound.mp3"></audio>
+
     <body>
     <div class="home">
     <h2> Airplane 101</h2>
@@ -18,6 +21,30 @@
         <button id="b747" class="default">B747</button>
         <button id="a350" class="default">A350</button>
        <script>
+    function handleClick(event) {
+  // Reset all buttons to default state
+  a320Button.className = 'default';
+  b747Button.className = 'default';
+  a350Button.className = 'default';
+
+  // Get the audio elements
+  const correctSound = document.getElementById('correctSound');
+  const incorrectSound = document.getElementById('incorrectSound');
+
+  // Check which button was clicked
+  if (event.target.id === 'a320') {
+    // If A320 is clicked, mark it as correct and play correct sound
+    event.target.className = 'correct';
+    event.target.innerText = 'Correct!';
+    correctSound.play();
+  } else {
+    // If any other button is clicked, mark it as incorrect and play incorrect sound
+    event.target.className = 'incorrect';
+    event.target.innerText = 'Incorrect!';
+    incorrectSound.play();
+  }
+}
+
            
     // Select all buttons
     const a320Button = document.getElementById('a320');
