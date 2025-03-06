@@ -13,6 +13,41 @@
   </div>
     <br><br>
     <img src="a320.png" alt="a320/Airplane101" width="500" height="300">
+        <br><br>
+        <button id="a320" class="default">A320</button>
+        <button id="b747" class="default">B747</button>
+        <button id="a350" class="default">A350</button>
+       <script>
+           
+    // Select all buttons
+    const a320Button = document.getElementById('a320');
+    const b747Button = document.getElementById('b747');
+    const a350Button = document.getElementById('a350');
+
+    // Function to handle the click event
+    function handleClick(event) {
+      // Reset all buttons to default state
+      a320Button.className = 'default';
+      b747Button.className = 'default';
+      a350Button.className = 'default';
+
+      // Check which button was clicked
+      if (event.target.id === 'a320') {
+        // If A320 is clicked, mark it as correct
+        event.target.className = 'correct';
+        event.target.innerText = 'Correct!';
+      } else {
+        // If any other button is clicked, mark it as incorrect
+        event.target.className = 'incorrect';
+        event.target.innerText = 'Incorrect!';
+      }
+    }
+
+    // Add event listeners to all buttons
+    a320Button.addEventListener('click', handleClick);
+    b747Button.addEventListener('click', handleClick);
+    a350Button.addEventListener('click', handleClick);
+  </script>
 
 </body>
 </html>
