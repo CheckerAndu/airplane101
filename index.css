@@ -78,3 +78,31 @@ img:hover {
   border: 3px solid rgb(255, 0, 0);
 }
 
+button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 5px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    /* Default button color */
+    button.default {
+      background-color: lightgray;
+      color: black;
+    }
+
+    /* Correct button */
+    button.correct {
+      background-color: green;
+      color: white;
+    }
+
+    /* Incorrect button */
+    button.incorrect {
+      background-color: red;
+      color: white;
+    }
+
