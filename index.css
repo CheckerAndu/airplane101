@@ -67,7 +67,9 @@ body {
 img {
   padding-top: 25px;
   border-radius: 10px;
-  border: 3px blue;
+  border: 3px;
+  border-color: rgb(0, 0, 255); /*border color in rgb*/
+  border-style: solid;
   transition: all 0.3s ease;
 }
 
