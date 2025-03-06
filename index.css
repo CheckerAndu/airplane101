@@ -79,15 +79,16 @@ img:hover {
 }
 
 button {
-      padding: 10px 20px;
-      font-size: 16px;
-      margin: 5px;
-      border: 1px;
-      border-radius: 5px;
-      border-style: ridge;
-      cursor: pointer;
-      transition: background-color 0.3s ease, color 0.3s ease;
-    }
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 5px;
+  border: 1px ridge #000;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 
     /* Default button color */
     button.default {
@@ -112,6 +113,7 @@ button {
     }
 
    button:hover {
-     border: 3px rgb(0,0,0);
-   }
+  border: 3px ridge rgb(0,0,0);
+}
+
 
