@@ -67,11 +67,10 @@ body {
 img {
   padding-top: 25px;
   border-radius: 10px;
-  border: 3px;
-  border-color: rgb(0, 0, 255); /*border color in rgb*/
-  border-style: solid;
+  border: 3px solid rgb(0, 0, 255); /* Combines width, style, and color */
   transition: all 0.3s ease;
 }
+
 
 img:hover {
   transform: scale(1.1);
