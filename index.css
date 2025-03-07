@@ -37,7 +37,7 @@ body {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: blue;
+  background-color: magenta;
   transition: width 0.3s ease;
 }
 
@@ -75,7 +75,7 @@ img {
 img:hover {
   transform: scale(1.1);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  border: 3px solid rgb(255, 0, 0);
+  border: 3px solid rgb(211, 17, 91);
 }
 
 button {
@@ -116,4 +116,56 @@ button {
   border: 3px ridge rgb(0, 0, 255);
 }
 
+.text {
+  font-size: 20px;
+  text-align: center;
+  font-family: Arial, Verdana, Tahoma, sans-serif;
+  color: black;
+}
 
+.title {
+  padding-top: 12px;
+  font-family: Montserrat, Open Sans, Arial Black, sans-serif;
+  font-size: 55px;
+  text-decoration: underline;
+  text-decoration-color: black;
+  color: black
+}
+
+.subtitle {
+  padding-top: 12px;
+  font-family: Montserrat, Open Sans, Arial Black, sans-serif;
+  font-size: 40px;
+  color: black
+}
+
+.marked {
+  font-size: 20px;
+  text-align: center;
+  color: blue;
+  transition: color 0.3s ease;
+  position: relative;  /* Add this */
+  display: inline-block;  /* Add this */
+  padding-bottom: 3px;  /* Add this for some space above the line */
+  font-family: 'Brush Script MT', cursive;
+}
+
+.marked::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -10%; /*Start 10 percent moreto the left from thw word*/
+  width: 0;
+  height: 2px; /*The height of the line */
+  background-color: magenta;
+  transition: width 0.3s ease;
+}
+
+/* extend the bar */
+.marked:hover::after {
+  width: 120%; /*Extend the line 20 percent more (left and right 10 percent more)*/
+}
+
+.marked:hover {
+  color: magenta;
+}
