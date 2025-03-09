@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  background-color: white;
   text-align: center;
 }
 
@@ -73,7 +74,6 @@ img {
 
 
 img:hover {
-  transform: scale(1.1);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border: 3px solid rgb(211, 17, 91);
 }
@@ -118,18 +118,20 @@ button {
 
 .text {
   font-size: 20px;
-  text-align: center;
+  text-align: center; /* Centers the text within its container */
   font-family: Arial, Verdana, Tahoma, sans-serif;
   color: black;
+  max-width: 800px; /* Limits the width of the text container */
+  margin: 0 auto; /* Centers the container itself horizontally */
 }
+
 
 .title {
   padding-top: 12px;
   font-family: Montserrat, Open Sans, Arial Black, sans-serif;
   font-size: 55px;
-  text-decoration: underline;
+  text-decoration: solid;
   text-decoration-color: black;
-  color: black
 }
 
 .subtitle {
@@ -139,7 +141,7 @@ button {
   color: black
 }
 
-.marked {
+h4 {
   font-size: 20px;
   text-align: center;
   color: blue;
@@ -147,10 +149,10 @@ button {
   position: relative;  /* Add this */
   display: inline-block;  /* Add this */
   padding-bottom: 3px;  /* Add this for some space above the line */
-  font-family: 'Brush Script MT', cursive;
+  font-family: 'Montserrat', 'Futura', sans-serif;
 }
 
-.marked::after {
+h4::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -162,10 +164,103 @@ button {
 }
 
 /* extend the bar */
-.marked:hover::after {
+h4:hover::after {
   width: 120%; /*Extend the line 20 percent more (left and right 10 percent more)*/
 }
 
-.marked:hover {
+h4:hover {
   color: magenta;
+}
+
+#StartLearning {
+  text-align: left;
+  padding-top: 12px;
+  font-family: Montserrat, Open Sans, Arial Black, sans-serif;
+  font-size: 40px;
+  color: black
+}
+
+#toc_container {
+  background-color: #ffffff;
+  border: 2px solid #4a90e2;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 2em auto;
+  padding: 30px;
+  transition: all 0.3s ease;
+}
+
+#toc_container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.toc_title {
+  font-size: 24px;
+  color: #4a90e2;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+#toc_container ul {
+  padding-left: 0;
+}
+
+#toc_container li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+#toc_container a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  position: relative;
+  padding-left: 20px;
+}
+
+#toc_container a:before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #4a90e2;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+#toc_container a:hover {
+  color: #4a90e2;
+}
+
+#toc_container a:hover:before {
+  opacity: 1;
+}
+
+
+h3 {
+  font-size: 28px;
+  font-family: 'Arial', 'Verdana', sans-serif;
+  color: #333333;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #00bfff;
+  padding-bottom: 5px;
+}
+
+.link {
+    text-decoration: none; /* Removes underline */
+    color: darkcyan; 
+    display: block; /* Ensures each link starts on a new line */
+    text-align: left; 
+    margin-left: 0; /* Ensures no extra margin pushes it to the center */
+    transition: 0.1s ease;
+  }
+
+.link:hover {
+  color: #4a90e2; 
 }
